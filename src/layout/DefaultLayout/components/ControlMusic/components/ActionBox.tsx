@@ -1,7 +1,7 @@
 const ActionBox = () => {
   return (
     <>
-      <div className="w-[50%] flex gap-8 justify-center">
+      <div className="w-[55%] flex gap-5 justify-center">
         <button>
           <span aria-hidden="true" className="w-[18px] flex">
             <svg
@@ -37,7 +37,6 @@ const ActionBox = () => {
           </span>
         </button>
         <button
-          disabled=""
           data-testid="control-button-playpause"
           aria-label="Pause"
           data-encore-id="buttonPrimary"
@@ -60,7 +59,6 @@ const ActionBox = () => {
           </span>
         </button>
         <button
-          disabled=""
           data-testid="control-button-skip-forward"
           aria-label="Next"
           data-encore-id="buttonTertiary"
@@ -80,7 +78,6 @@ const ActionBox = () => {
           </span>
         </button>
         <button
-          disabled=""
           data-testid="control-button-repeat"
           role="checkbox"
           aria-checked="false"
@@ -102,8 +99,16 @@ const ActionBox = () => {
           </span>
         </button>
       </div>
-      <div className="w-[50%] h-[20px] flex justify-center items-center">
-        <div className="h-[3px] rounded-xl w-full bg-[#363636]"></div>
+      <div className="w-[55%] h-[20px] flex justify-center items-center gap-2">
+        <div className="w-[5%] flex items-center justify-end text-[#858585] font-bold">
+          -:--
+        </div>
+        <div className="flex items-center justify-center w-[85%] h-full">
+          <div className="h-[3px] w-full rounded-xl bg-[#4d4d4d]"></div>
+        </div>
+        <div className="w-[5%] flex items-center justify-start text-[#858585] font-bold">
+          --:-
+        </div>
       </div>
     </>
   );
