@@ -1,5 +1,5 @@
 import { FC } from "react";
-
+import Button from "../../../../../../components/Button";
 interface ItemContentProps {
   title: string;
   description: string;
@@ -13,9 +13,7 @@ const ItemContent: FC<ItemContentProps> = ({ title, description, create }) => {
         <h1 className="font-semibold text-[13.5px]">{title}</h1>
         <span className="font-medium text-[12.5px]">{description}</span>
       </div>
-      <button className="text-black bg-white text-[13px] font-semibold px-3 py-[6px] rounded-3xl w-max">
-        {create}
-      </button>
+      <Button name={create} type="white" />
     </div>
   );
 };

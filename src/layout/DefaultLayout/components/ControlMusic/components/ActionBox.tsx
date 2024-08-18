@@ -100,13 +100,13 @@ const ActionBox = () => {
         </button>
       </div>
       <div className="w-[55%] h-[20px] flex justify-center items-center gap-2">
-        <div className="w-[5%] flex items-center justify-end text-[#858585] font-bold">
+        <div className="w-[7%] text-[12px] flex items-center justify-end text-[#858585] font-bold">
           -:--
         </div>
         <div className="flex items-center justify-center w-[85%] h-full">
-          <div className="h-[3px] w-full rounded-xl bg-[#4d4d4d]"></div>
+          <div className="h-[3px] w-[100%] rounded-xl bg-[#4d4d4d]"></div>
         </div>
-        <div className="w-[5%] flex items-center justify-start text-[#858585] font-bold">
+        <div className="w-[7%] text-[12px] flex items-center justify-start text-[#858585] font-bold">
           --:-
         </div>
       </div>
